@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+            <form>
+                    Nom:<br>
+                    <input type="text" name="firstname" required>
+                    <br>
+                    Prénom:<br>
+                    <input type="text" name="lastname" required>
+                  </form>
+                  
+        <p>Email</p>
+        <form >
+            <input type="email" required="required" />
+        </form>
+
+        <p>Age</p>
+        <form >
+                <input type="date" name="bday" min="1985-01-01"/> <br>
+                
+            
+            </form>
+    
+
+        <p>Téléphone</p>
+        <form >
+                <input type="tel" name="phone" pattern="[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}" required />
+                <input type="submit">
+                <span>Format:01-42-52-34-97</span>
+            </form>
+    
+        <p>Sexe</p>
+
+        <form >
+            
+  <input type="radio" name="gender" value="male" checked> Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+        </form>
+        <p>Couleurs favorites</p>
+        <form action="">
+            <input type="color" name="favcolor">
+        </form>
+        <form action=""></form>
+    </main>
+    <p>Date</p>
+    <form>
+           
+            
+            <input type="date" name="date" min="2019-04-27"><br>
+          </form> 
+          <p>Technologies</p>
+          <form action="">
+          <select>
+                <option value="html">HTML</option>
+                <option value="css">Css</option>
+                <option value="php">PHP</option>
+                <option value="sql">SQL</option>
+                
+              </select>
+            </form>
+
+            <form method="post" action="traitement.php">
+                    <p>
+                        <label for="ameliorer">Questions?</label><br />
+                        <textarea name="ameliorer" id="ameliorer" rows="20" cols="100"  ></textarea>
+                    </p>
+                 </form>
+                 <form action="">
+                     <input type="submit" name="Soumettre">
+                 </form>
+</body>
+</html>
